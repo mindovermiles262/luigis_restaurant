@@ -1,0 +1,79 @@
+body {
+  --color-olive: #657865;
+  --color-gold: #b08759;
+  --color-brown: #4d453a;
+  --color-rose: #c77b64;
+  --color-lavender: #b6c1d5;
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 20px 20px 0 0;
+}
+.container {
+  width: 80%;
+  min-width: 794px;
+  margin-left: 10%;
+  background-color: var(--color-olive);
+  border-radius: 20px;
+  height: 100%;
+  min-height: 600px;
+}
+.selection-bar {
+  width: 100%;
+}
+.col-6 {
+  text-align: center;
+}
+.row {
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+h1 {
+  padding-top: 15%;
+}
+h3 {
+  margin-left: 20px;
+  color: white;
+}
+img {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%
+}
+
+.tab-button {
+  background-color: var(--color-gold);
+  margin-bottom: 0;
+  border: 1px solid var(--color-brown);
+  border-radius: 20px 20px 0 0;
+}
+#content {
+  background: linear-gradient(var(--color-gold), var(--color-brown));
+  margin: 0 15px 15px 15px;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+}
+.menu-class {
+  width: 90%;
+  background-color: var(--color-lavender);
+  margin: auto 5%;
+}
+.table {
+  width: 90% !important;
+  margin-left: 5% !important;
+  color: white;
+}
+.menu-tabs {
+  text-align: center;
+}
+.menu-tabs > thead > tr > th {
+  border-top: 0;
+}
+th > p {
+  font-weight: 100;
+}
