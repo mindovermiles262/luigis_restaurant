@@ -36,7 +36,6 @@ let initMenu = function() {
   });
   
   pizzaTab.addEventListener("click", function() {
-    console.log("Pizza")
     menuContent.innerHTML = "";
     menuContent.innerHTML = pizzaPage;
   });
