@@ -1,6 +1,5 @@
 // Append Posts
 const content = document.getElementById("content")
-const menuContent = document.getElementById("menu-content")
 
 // Top Tabs
 const menuTab = document.getElementById("menu")
@@ -10,6 +9,7 @@ const directionsTab = document.getElementById("directions")
 menuTab.addEventListener("click", function() {
   content.innerHTML = "";
   content.innerHTML = menuPage;
+  initMenu();
 })
 
 aboutTab.addEventListener("click", function() {
@@ -23,8 +23,9 @@ directionsTab.addEventListener("click", function() {
 })
 
 
-
+let initMenu = function() {
   // Menu Tabs
+  const menuContent = document.getElementById("menu-content")
   const saladsTab = document.getElementById("salad-tab")
   const pizzaTab = document.getElementById("pizza-tab")
   const pastaTab = document.getElementById("pasta-tab")
@@ -33,13 +34,17 @@ directionsTab.addEventListener("click", function() {
     menuContent.innerHTML = "";
     menuContent.innerHTML = saladsPage;
   });
-
+  
   pizzaTab.addEventListener("click", function() {
+    console.log("Pizza")
     menuContent.innerHTML = "";
     menuContent.innerHTML = pizzaPage;
   });
-
+  
   pastaTab.addEventListener("click", function() {
     menuContent.innerHTML = "";
     menuContent.innerHTML = pastaPage;
   })
+};
+
+initMenu()

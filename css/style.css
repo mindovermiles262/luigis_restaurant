@@ -83,3 +83,10 @@ th > p {
   color: white;
   margin: 20px;
 }
+
+.tab-button, .tab {
+  cursor: pointer;
+}
+.tab-button:hover, .tab:hover {
+  color: rgb(215, 215, 215);
+}
