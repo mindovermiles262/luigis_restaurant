@@ -77,3 +77,9 @@ img {
 th > p {
   font-weight: 100;
 }
+.textContainer {
+  width: 90%;
+  padding-left: 5%;
+  color: white;
+  margin: 20px;
+}
